@@ -51,6 +51,8 @@ int main()
         // find product
         cout << "the product of the two values is: " << val1 * val2 << "\n";
 
+        // find ratio
+
     }
 }
 
