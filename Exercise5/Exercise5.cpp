@@ -53,7 +53,6 @@ int main()
 
         // find ratio
         double gcd = find_gcd_double(val1, val2);
-        cout << gcd << endl;
         int numerator = val1 / gcd;
         int denominator = val2 / gcd;
         cout << "the ratio of the two numbers is: " << numerator << ":" << denominator << endl;
