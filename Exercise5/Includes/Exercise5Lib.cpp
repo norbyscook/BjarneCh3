@@ -82,4 +82,7 @@ double get_decimal()
 }
 
 // function to find the GCD of two doubles
+double find_gcd_double()
+{
 
+}

@@ -15,7 +15,7 @@ void Pause_Program ()
 }
 
 // find the greatest common divisor of two intergers
-int Find_GCD_Int(int val1, int val2)
+int find_gcd_int(int val1, int val2)
 {
     // make all positive
     val1 = {abs(val1)};
