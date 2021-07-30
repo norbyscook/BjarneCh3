@@ -56,12 +56,8 @@ int main()
         cout << gcd << endl;
         int numerator = val1 / gcd;
         int denominator = val2 / gcd;
-        cout << "the ratio of the two numbers is: " << numerator << ":" << denominator << "\n"
-            << "however, we know the ratio is not correct. so lets try another method." << endl;
-        
-        // find ratio v2
+        cout << "the ratio of the two numbers is: " << numerator << ":" << denominator << endl;
 
-        
     }
 }
 
