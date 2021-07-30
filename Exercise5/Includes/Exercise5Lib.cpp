@@ -81,3 +81,5 @@ double get_decimal()
     return result;
 }
 
+// function to find the GCD of two doubles
+

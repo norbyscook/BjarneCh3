@@ -1,6 +1,7 @@
 /*
 andy libiary that has functions for counting signs used for checking if inputs are numerical or not.
 also has a pause program function. 
+and a function to find the GDC of intergers
 */
 
 #include "AndyLib.h"
@@ -13,8 +14,8 @@ void Pause_Program ()
     cin >> end_pause;
 }
 
-// find the greatest common divisor 
-int find_GCD(int val1, int val2)
+// find the greatest common divisor of two intergers
+int Find_GCD_Int(int val1, int val2)
 {
     // make all positive
     val1 = {abs(val1)};
