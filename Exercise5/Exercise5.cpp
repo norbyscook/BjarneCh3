@@ -52,8 +52,15 @@ int main()
         cout << "the product of the two values is: " << val1 * val2 << "\n";
 
         // find ratio
-        Find_gcd_double()
-
+        double gcd = find_gcd_double(val1, val2);
+        cout << gcd << endl;
+        int numerator = val1 / gcd;
+        int denominator = val2 / gcd;
+        cout << "the ratio of the two numbers is: " << numerator << ":" << denominator << "\n"
+            << "however, we know the ratio is not correct. so lets try another method." << endl;
+        
+        // find ratio v2
+        
     }
 }
 
