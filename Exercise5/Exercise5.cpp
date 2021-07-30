@@ -60,6 +60,7 @@ int main()
             << "however, we know the ratio is not correct. so lets try another method." << endl;
         
         // find ratio v2
+
         
     }
 }
