@@ -4,6 +4,7 @@ functions are then used by other source code files.
 */
 
 #include <iostream>
+#include <cmath>
 using std::cout;
 using std::cin;
 using std::endl;

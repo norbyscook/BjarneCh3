@@ -82,7 +82,20 @@ double get_decimal()
 }
 
 // function to find the GCD of two doubles
-double find_gcd_double()
+double find_gcd_double(double dec1, double dec2)
 {
-
+    if (dec1 < dec2)
+    {
+        // switch places
+        double old_dec2 = dec2;
+        dec2 = dec1;
+        dec1 = old_dec2;
+    }
+    while(dec2 > 0)
+    {
+        double old_dec2 = dec2;
+        dec2 = remainder(dec1, dec2);
+        dec1 = old_dec2;
+    }
+    return dec1;
 }
