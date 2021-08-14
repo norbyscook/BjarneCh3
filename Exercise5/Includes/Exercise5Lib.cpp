@@ -86,7 +86,8 @@ double find_gcd_double(double dec1, double dec2)
 {
     if (dec1 < dec2)
     {
-        // switch places
+        // switch places if dec1 is smaller than dec2 
+        // as dec1 has to be larger than dec2
         double old_dec2 = dec2;
         dec2 = dec1;
         dec1 = old_dec2;
