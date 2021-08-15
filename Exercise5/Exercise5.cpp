@@ -22,8 +22,7 @@ int main()
         char* decimal_point = NULL; // pointer to the decimal point of the decimal string 
         char* input_end = NULL; // pointer to the end of the decimal string
         bool input_valid = false; // to help check if input is valid
-        bool has_decimal = false; // keep track of decimal point
-        bool has_sign = false; // keep track of + or - signs
+
         do
         {
             // keep asking user for input string

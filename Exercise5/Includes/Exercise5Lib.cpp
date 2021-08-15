@@ -8,6 +8,8 @@ library for exercise 5
 // to the output, which is a string pointer. 
 bool get_decimal_str(string* output)
 {
+    bool has_decimal = false; // keep track of decimal point
+    bool has_sign = false; // keep track of + or - signs
     
     return true;
 }
