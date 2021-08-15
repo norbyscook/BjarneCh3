@@ -6,17 +6,37 @@ library for exercise 5
 
 // takes input from the keyboard stream and adds valid decimal characters 
 // to the output, which is a string pointer. 
+
+string decimal_input_loop()
+{
+    bool input_valid = false; // to help check if input is valid
+    string output = "";
+        do
+        {
+            output = ""; // reset string
+            // keep asking user for input string
+            cout << "decimals only" << endl;
+            input_valid = get_decimal_str(&output);
+
+        } while (input_valid == false); // while input is invalid
+    return output;
+}
+
 bool get_decimal_str(string* output)
 {
     bool has_decimal = false; // keep track of decimal point
     bool has_sign = false; // keep track of + or - signs
 
-    for (char ch = getchar(); ch != '\n'; ch = getchar()) // for each character in the input string
+    for (char ch = getchar(); ch != EOF; ch = getchar()) // for each character in the input string
     {
-        if(input_valid(ch, &has_decimal, &has_sign))
+        if(ch_valid(ch, &has_decimal, &has_sign))
         {
             // store character into string
             *output += ch;
+        }
+        else if (ch == '\n' || ch == ' ')
+        {
+            return true; // return true if new line is encountered
         }
         else
         {
@@ -26,9 +46,26 @@ bool get_decimal_str(string* output)
     return true; // return true once all characters are added
 }
 
-bool input_valid(char ch, bool* has_decimal, bool* has_sign)
+bool ch_valid(char ch, bool* has_decimal, bool* has_sign)
 {
-    return true;
+    if (isdigit(ch))
+    {
+        return true;
+    }
+    else if (check_decimal_pt(ch)) // character is a decimal point
+    {
+        *has_decimal = true;
+        return true;
+    }
+    else if (check_sign(ch)) // character is a sign
+    {
+        *has_sign = true;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 bool check_sign(char ch)
