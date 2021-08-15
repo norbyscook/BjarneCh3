@@ -3,8 +3,8 @@
 // struct for decimal string
 struct dec_string
 {
-    string str = "";
-    int dec_index = 0;
+    string str = ""; // the decimal string
+    int dec_index = 0; // index of the decimal 
 };
 
 

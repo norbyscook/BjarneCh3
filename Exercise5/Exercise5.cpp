@@ -1,5 +1,5 @@
 /*
-this program takes user input of a number and tells user:
+this program takes user input of a decimal number and tells user:
 which one is larger or smaller
 the sum
 the difference
@@ -9,7 +9,6 @@ and ratio
 
 #include ".\\Includes\\Exercise5Lib.h"
 
-
 int main()
 {
     while (true)
@@ -17,13 +16,12 @@ int main()
          // user input
         cout << "enter two decimals separated by spaces or press enter after each number: \n";
         
-        string decimal_str1 = ""; // string to store decimal1
-        string decimal_str2 = ""; // string to store decimal2
-
-        decimal_str1 = decimal_input_loop();
+        dec_string decimal_str1; // dec_string to store decimal1
+        
+        decimal_str1.str = decimal_input_loop();
         
         // test print
-        cout << decimal_str1 << "\n";
+        cout << decimal_str1.str << "\n";
 
         double val1 = 0.0;
         double val2 = 0.0;
