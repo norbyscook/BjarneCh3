@@ -8,13 +8,9 @@ and ratio
 */
 
 #include ".\\Includes\\Exercise5Lib.h"
-#include <math.h>
-
-using std::to_string;
 
 
 void print_larger_smaller(double larger, double smaller);
-long find_pow_amount(double val1, double val2);
 
 int main()
 {
