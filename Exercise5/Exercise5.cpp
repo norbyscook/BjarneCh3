@@ -16,14 +16,16 @@ int main()
          // user input
         cout << "enter two decimals separated by spaces or press enter after each number: \n";
         
-        dec_string decimal_str1; // dec_string to store decimal1
+        // dec_string to store decimals as string
+        dec_string dec_str1; 
         
-        decimal_str1.str = decimal_input_loop();
+        dec_str1.str = decimal_input_loop();
         
         // test print
-        cout << decimal_str1.str << "\n";
+        cout << dec_str1.str << "\n";
 
-        double val1 = 0.0;
+        // conver to double 
+        double val1 = stod(dec_str1.str);
         double val2 = 0.0;
         
         // test print
