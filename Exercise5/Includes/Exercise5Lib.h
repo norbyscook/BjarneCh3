@@ -1,5 +1,13 @@
 #include "..\..\Ch3Lib\AndyLib.h"
 
+// struct for decimal string
+struct dec_string
+{
+    string str = "";
+    int dec_index = 0;
+};
+
+
 // functions from Exercise5Lib
 bool get_decimal_str(string* output);
 bool check_sign(char ch);

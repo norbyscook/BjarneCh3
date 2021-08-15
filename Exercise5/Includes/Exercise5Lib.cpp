@@ -4,9 +4,7 @@ library for exercise 5
 
 #include "Exercise5Lib.h"
 
-// takes input from the keyboard stream and adds valid decimal characters 
-// to the output, which is a string pointer. 
-
+// return a string of decimal characters, otherwise keep asking for input.
 string decimal_input_loop()
 {
     bool input_valid = false; // to help check if input is valid
@@ -21,6 +19,7 @@ string decimal_input_loop()
     return output;
 }
 
+// pointer to the string output, bool for succees of fail
 bool get_decimal_str(string* output)
 {
     bool has_decimal = false; // keep track of decimal point
@@ -46,6 +45,7 @@ bool get_decimal_str(string* output)
     return true; // return true once all characters are added
 }
 
+// return true if contains only decimal characters
 bool ch_valid(char ch, bool* has_decimal, bool* has_sign)
 {
     if (isdigit(ch))
@@ -68,6 +68,7 @@ bool ch_valid(char ch, bool* has_decimal, bool* has_sign)
     }
 }
 
+// return true if character is '+' or '-'
 bool check_sign(char ch)
 {
     if (ch == '+' || ch == '-')
@@ -77,6 +78,7 @@ bool check_sign(char ch)
     return false;
 }
 
+// returns true if character is '.'
 bool check_decimal_pt(char ch)
 {
     if (ch == '.')
