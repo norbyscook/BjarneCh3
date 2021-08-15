@@ -39,6 +39,7 @@ bool get_decimal_str(string* output)
         }
         else
         {
+            fflush(stdin); // clear the stream
             return false; // false if input invalid    
         }
     }
@@ -51,12 +52,12 @@ bool ch_valid(char ch, bool* has_decimal, bool* has_sign)
     {
         return true;
     }
-    else if (check_decimal_pt(ch)) // character is a decimal point
+    else if (check_decimal_pt(ch) && !(*has_decimal)) // character is the only decimal point
     {
         *has_decimal = true;
         return true;
     }
-    else if (check_sign(ch)) // character is a sign
+    else if (check_sign(ch) && !(*has_sign)) // character is the only sign
     {
         *has_sign = true;
         return true;
