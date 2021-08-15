@@ -11,3 +11,23 @@ bool get_decimal_str(string* output)
     
     return true;
 }
+
+bool check_sign(char ch)
+{
+    if (ch == '+' || ch == '-')
+    {
+        return true;
+    }
+    return false;
+}
+
+bool check_decimal_pt(char ch)
+{
+    if (ch == '.')
+    {
+        return true;
+    }
+    return false;
+}
+
+
