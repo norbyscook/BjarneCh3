@@ -26,9 +26,10 @@ int main()
         bool has_sign = false; // keep track of + or - signs
         do
         {
+            // keep asking user for input string
             input_valid = get_decimal_str(&decimal_str);
             // place pointer
-        } while (input_valid == false);
+        } while (input_valid == false); // while input is invalid
         
 
         double val1 = 0.0;
