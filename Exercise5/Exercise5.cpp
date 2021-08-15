@@ -17,6 +17,18 @@ int main()
     {
          // user input
         cout << "enter two decimals separated by spaces or press enter after each number: \n";
+        
+        string decimal_str = ""; // string to store decimal
+        char* decimal_point = NULL; // pointer to the decimal point of the decimal string 
+        char* input_end = NULL; // pointer to the end of the decimal string
+        bool input_valid = false; // to help check if input is valid
+        do
+        {
+            input_valid = get_decimal_str(&decimal_str)
+            // place pointer
+        } while (input_valid == false);
+        
+
         double val1 = 0.0;
         double val2 = 0.0;
         
