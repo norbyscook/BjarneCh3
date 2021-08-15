@@ -13,6 +13,4 @@ using std::string;
 using std::stod;
 using std::stoi;
  
-bool ch_is_sign (char ch);
-uint8_t sign_counter(uint8_t sign_count, string input);
 void Pause_Program ();
