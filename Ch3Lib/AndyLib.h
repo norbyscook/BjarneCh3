@@ -1,9 +1,10 @@
 /*
-andy libiary header file gets functions from iosteam and andy libiary
+andy libiary header file gets functions from std and andy libiary
 functions are then used by other source code files.  
 */
 
 #include <iostream>
+#include <string>
 #include <cmath>
 using std::cout;
 using std::cin;
@@ -14,4 +15,4 @@ using std::stoi;
  
 bool ch_is_sign (char ch);
 uint8_t sign_counter(uint8_t sign_count, string input);
-int find_gcd_int(int val1, int val2);
+void Pause_Program ();

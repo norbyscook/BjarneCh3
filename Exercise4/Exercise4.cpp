@@ -8,7 +8,7 @@ and ratio
 */
 
 #include <iostream>
-#include "exercise_4_lib.h"
+#include "Exercise4lib.h"
 
 using std::cout;
 using std::cin;

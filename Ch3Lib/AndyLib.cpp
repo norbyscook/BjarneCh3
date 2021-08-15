@@ -14,23 +14,6 @@ void Pause_Program ()
     cin >> end_pause;
 }
 
-// find the greatest common divisor of two intergers
-int find_gcd_int(int val1, int val2)
-{
-    // make all positive
-    val1 = {abs(val1)};
-    val2 = {abs(val2)};
-    int old_val2 = {val2};
-    while (val2 > 0)
-    {
-        old_val2 = {val2};
-        val2 = val1 % val2;
-        val1 = old_val2;
-    }
-    return val1;
-}
-
-
 // decide if a character is - or + symbol
 bool ch_is_sign (char ch)
 {

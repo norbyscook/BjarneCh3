@@ -9,7 +9,6 @@ and ratio
 
 #include ".\\Includes\\Exercise5Lib.h"
 
-
 void print_larger_smaller(double larger, double smaller);
 
 int main()
@@ -18,8 +17,8 @@ int main()
     {
          // user input
         cout << "enter two decimals separated by spaces or press enter after each number: \n";
-        double val1 = {get_decimal()};
-        double val2 = {get_decimal()};
+        double val1 = 0.0;
+        double val2 = 0.0;
         
         // test print
         cout << val1 << " " << val2 << "\n";
@@ -47,12 +46,7 @@ int main()
         // find product
         cout << "the product of the two values is: " << val1 * val2 << "\n";
 
-        // find ratio
-        double gcd = find_gcd_double(val1, val2);
-        int numerator = val1 / gcd;
-        int denominator = val2 / gcd;
-        cout << "the ratio of the two numbers is: " << numerator << ":" << denominator << endl;
-
+        
     }
 }
 

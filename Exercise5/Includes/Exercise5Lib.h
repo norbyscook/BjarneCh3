@@ -1,5 +1,6 @@
-#include "C:\\UnderGoing\\CppBjarne\\Ch3\\Ch3Lib\\AndyLib.h"
+#include "..\..\Ch3Lib\AndyLib.h"
 
+// functions from Exercise5Lib
 double get_decimal();
 double find_gcd_double(double dec1, double dec2);
 #include <math.h>
