@@ -11,14 +11,13 @@ string decimal_input_loop()
 {
     bool input_valid = false; // to help check if input is valid
     string output = "";
-        do
-        {
-            output = ""; // reset string
-            // keep asking user for input string
-            cout << "decimals only" << endl;
-            input_valid = get_decimal_str(&output);
 
-        } while (input_valid == false); // while input is invalid
+    while (!get_decimal_str(&output)) // while input is invalid
+    {
+        output = ""; // reset string
+        // keep asking user for input string
+        cout << "decimals only" << endl;
+    }
     return output;
 }
 
