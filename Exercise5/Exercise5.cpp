@@ -9,7 +9,6 @@ and ratio
 
 #include ".\\Includes\\Exercise5Lib.h"
 
-void print_larger_smaller(double larger, double smaller);
 
 int main()
 {
@@ -30,6 +29,8 @@ int main()
             // place pointer
         } while (input_valid == false); // while input is invalid
         
+        // test print
+        cout << decimal_str << "\n";
 
         double val1 = 0.0;
         double val2 = 0.0;
@@ -60,14 +61,5 @@ int main()
         // find product
         cout << "the product of the two values is: " << val1 * val2 << "\n";
 
-        
     }
 }
-
-void print_larger_smaller(double larger, double smaller)
-{
-    cout << "the larger number is: " << larger << "\n";
-    cout << "the smaller number is: " << smaller << "\n";
-}
-
-
