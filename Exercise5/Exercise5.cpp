@@ -27,6 +27,8 @@ int main()
         cout << dec_str1.str << "\n";
         cout << dec_str2.str << "\n";
 
+        // TODO find decimal point location
+
         // conver to double 
         double val1 = stod(dec_str1.str);
         double val2 = 0.0;
