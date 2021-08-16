@@ -52,12 +52,12 @@ bool ch_valid(char ch, bool* has_decimal, bool* has_sign)
     {
         return true;
     }
-    else if (check_decimal_pt(ch) && !(*has_decimal)) // character is the only decimal point
+    else if (ch == '.' && !(*has_decimal)) // character is the only decimal point
     {
         *has_decimal = true;
         return true;
     }
-    else if (check_sign(ch) && !(*has_sign)) // character is the only sign
+    else if (ch == '+' || ch == '-' && !(*has_sign)) // character is the only sign
     {
         *has_sign = true;
         return true;
@@ -68,25 +68,6 @@ bool ch_valid(char ch, bool* has_decimal, bool* has_sign)
     }
 }
 
-// return true if character is '+' or '-'
-bool check_sign(char ch)
-{
-    if (ch == '+' || ch == '-')
-    {
-        return true;
-    }
-    return false;
-}
-
-// returns true if character is '.'
-bool check_decimal_pt(char ch)
-{
-    if (ch == '.')
-    {
-        return true;
-    }
-    return false;
-}
 
 // print the larger and smaller number
 void print_larger_smaller(double larger, double smaller)
