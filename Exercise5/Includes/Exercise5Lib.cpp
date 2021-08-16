@@ -23,16 +23,16 @@ bool get_decimal_str(string* output)
     bool has_decimal = false; // keep track of decimal point
     bool has_sign = false; // keep track of + or - signs
 
-    for (char ch = getchar(); ch != EOF; ch = getchar()) // for each character in the input string
+    for (char ch = getchar(); ch != '\n'; ch = getchar()) // for each character in the input string
     {
         if(ch_valid(ch, &has_decimal, &has_sign))
         {
             // store character into string
             *output += ch;
         }
-        else if (ch == '\n' || ch == ' ')
+        else if (ch == ' ')
         {
-            return true; // return true if new line is encountered
+            // do nothing, keep going
         }
         else
         {
