@@ -12,7 +12,7 @@ string decimal_input_loop()
     while (!get_decimal_str(&output)) // while input is invalid
     {
         // keep asking user for input string
-        cout << "decimals only" << endl;
+        cout << "decimals only, no spaces" << endl;
     }
     return output;
 }
@@ -30,10 +30,6 @@ bool get_decimal_str(string* output)
             // store character into string
             *output += ch;
         }
-        else if (ch == ' ')
-        {
-            // do nothing, keep going
-        }
         else
         {
             fflush(stdin); // clear the stream
@@ -41,7 +37,7 @@ bool get_decimal_str(string* output)
             return false; // false if input invalid    
         }
     }
-    return true; // return true once all characters are added
+    return true; // return true if '\n' is reached
 }
 
 // return true if contains only decimal characters

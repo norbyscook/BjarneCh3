@@ -14,7 +14,7 @@ int main()
     while (true)
     {
          // user input
-        cout << "enter two decimals separated by spaces or press enter after each number: \n";
+        cout << "enter two decimals with no spaces, press enter after each number: \n";
         
         // dec_string to store decimals as string
         dec_string dec_str1; 
@@ -31,7 +31,7 @@ int main()
 
         // conver to double 
         double val1 = stod(dec_str1.str);
-        double val2 = 0.0;
+        double val2 = stod(dec_str2.str);
         
         // test print
         cout << val1 << " " << val2 << "\n";
