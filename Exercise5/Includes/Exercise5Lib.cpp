@@ -7,12 +7,10 @@ library for exercise 5
 // return a string of decimal characters, otherwise keep asking for input.
 string decimal_input_loop()
 {
-    bool input_valid = false; // to help check if input is valid
     string output = "";
 
     while (!get_decimal_str(&output)) // while input is invalid
     {
-        output = ""; // reset string
         // keep asking user for input string
         cout << "decimals only" << endl;
     }
@@ -39,6 +37,7 @@ bool get_decimal_str(string* output)
         else
         {
             fflush(stdin); // clear the stream
+            *output = ""; // reset string
             return false; // false if input invalid    
         }
     }
