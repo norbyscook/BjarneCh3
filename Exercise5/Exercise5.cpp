@@ -18,11 +18,14 @@ int main()
         
         // dec_string to store decimals as string
         dec_string dec_str1; 
+        dec_string dec_str2; 
         
         dec_str1.str = decimal_input_loop();
+        dec_str2.str = decimal_input_loop();
         
         // test print
         cout << dec_str1.str << "\n";
+        cout << dec_str2.str << "\n";
 
         // conver to double 
         double val1 = stod(dec_str1.str);
